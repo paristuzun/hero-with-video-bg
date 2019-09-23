@@ -1,0 +1,181 @@
+body {
+    font-family: Inter,proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 1.2rem;
+}
+h2 { font-weight: 500; }
+header.home-hero {
+    position: relative;
+    height: 89vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+header.home-hero .container {
+    position: relative;
+    z-index: 2;
+}
+header.home-hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+@media (max-width: 575.98px) {
+    header.home-hero video {
+        display: none;
+   }
+}
+header.home-hero img.poster {
+    height: 100vh;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: bottom right;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header.home-hero .rectangle {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    color: #fff;
+    border-radius: 1%;
+}
+header.home-hero .rectangle _:-ms-fullscreen, header.home-hero .rectangle :root .ie11up {
+    position: relative;
+    top: 100px;
+    left: 0;
+    margin: 0 auto;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    header.home-hero .rectangle {
+        position: relative;
+        top: 100px;
+        left: 0;
+        margin: 0 auto;
+   }
+}
+@media (max-width: 320px) {
+    header.home-hero .rectangle {
+        width: 300px;
+        height: 300px;
+   }
+}
+@media (min-width: 321px) and (max-width: 575.98px) {
+    header.home-hero .rectangle {
+        width: 350px;
+        height: 350px;
+   }
+}
+@media (min-width: 576px) and (max-width: 1199.98px) {
+    header.home-hero .rectangle {
+        width: 500px;
+        height: 500px;
+   }
+}
+@media (min-width: 1200px) {
+    header.home-hero .rectangle {
+        width: auto;
+        height: auto;
+   }
+}
+header.home-hero .rectangle h1 {
+    font-size: 3rem !important;
+}
+@media (max-width: 575.98px) {
+    header.home-hero .rectangle h1 {
+        font-size: 2rem !important;
+   }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header.home-hero .rectangle h1 {
+        font-size: 2rem !important;
+   }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    header.home-hero .rectangle h1 {
+        font-size: 2rem !important;
+   }
+}
+@media (max-width: 575.98px) {
+    header.home-hero .rectangle img {
+        display: none;
+   }
+}
+header.home-hero .rectangle p {
+    font-size: 1.3rem;
+}
+@media (max-width: 575.98px) {
+    header.home-hero .rectangle p.txt {
+        display: none;
+   }
+}
+@media (min-width: 576px) and (max-width: 1199.98px) {
+    header.home-hero .rectangle p.txt {
+        display: none;
+   }
+}
+header.home-hero .rectangle a {
+    color: #765ee8;
+    text-decoration: underline;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2rem;
+}
+header.home-hero .rectangle .btn {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+@media (max-width: 575.98px) {
+    header.home-hero .rectangle .btn {
+        display: none;
+   }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    header.home-hero .rectangle .btn {
+        font-size: 1rem !important;
+   }
+}
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('images/hero-video-poster.png') no-repeat bottom right scroll;
+   }
+}
+.scroll-container {
+    position: absolute;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 0;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    z-index: 5;
+}
+.scroll-container a {
+    height: 80px;
+    line-height: 80px;
+    font-size: 2rem;
+}
+.btn {
+    min-width: 150px;
+    color: #765ee8;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+    padding: .7rem 1.8rem;
+}
+@media (max-width: 1280px) {
+    .scroll-container {
+        display: none;
+   }
+}
